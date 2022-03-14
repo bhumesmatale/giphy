@@ -1,0 +1,17 @@
+.gifs{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.gif img{
+    max-width: 250px;
+    float: left;
+}
+.ngx-pagination a {
+    color: white!important;
+    display: block;
+    padding: 0.1875rem 0.625rem;
+    border-radius: 0;
+}

@@ -1,0 +1,14 @@
+<div class="gif">
+    <h1 style="color:aliceblue;margin-bottom: 15px; 
+    font-family: Arial, Helvetica, sans-serif;">Trending GIFs</h1>
+    <div class="gifss" *ngFor="let gif of gifs |paginate: { itemsPerPage: 10,
+        currentPage: page }">
+        <img [src]="gif.images.downsized.url" alt="Image">
+        
+    </div>
+    <div style="background-color: white; width:40%; position: fixed; bottom:0">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        </div>
+</div>
+
+
